@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="parent" class="d-flex align-items-center justify-content-center flex-column mx-auto my-5 py-5 px-5">
+        <h1>Smart Login System</h1>
+        <input type="text" id="uName" class="selected-input form-control rounded-1 mt-3 mb-3" placeholder="Enter your name">
+        <div class="alert alert-danger d-none py-1 my-1">
+            <small>Name is invalid</small>
+        </div>
+        <input type="text" id="uEmail" class="selected-input form-control rounded-1 mb-3" placeholder="Enter your email">
+        <div class="alert alert-danger d-none py-1 my-1">
+            <small>Email is invalid</small>
+        </div>
+        <div id="exist" class="alert alert-danger d-none py-1 my-1">
+            <small>Email already exist!</small>
+        </div>
+        <input type="password" id="uPassword" class="selected-input form-control" placeholder="Enter password">
+        <div class="alert alert-danger d-none py-1 my-1">
+            <small>Password is invalid</small>
+        </div>
+        <div class="success d-none mt-3">
+            <p>Success</p>
+        </div>
+        <a href="#" class="signup-a mt-4 mb-3 w-100 text-center rounded-1 py-2" id="signup-btn">Sign Up</a>
+        <p>You have an account? <a href="index.html">Sign In</a></p>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
